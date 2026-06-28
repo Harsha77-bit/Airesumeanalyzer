@@ -2,6 +2,8 @@
 An intelligent resume analysis platform that uses AI/ML to evaluate resumes, extract skills, match job requirements, and provide actionable feedback for job seekers.
 
 -----------------*Features*-----------------------------------------------------
+
+
 Resume Analysis: Extract text and analyze resumes using advanced ML algorithms
 Skill Extraction: Automatically identify and categorize technical and soft skills
 Job Matching: Match resume skills with job requirements and provide match percentages
@@ -15,6 +17,8 @@ Dashboard: View analysis history and resume scores
 
 
 ------------------*Architecture* ---------------------------------
+
+
 The project consists of three main components:
 
 1. Frontend (React)
@@ -38,35 +42,49 @@ Job matching algorithm
 ATS friendliness checker
 Score calculation and suggestions
 
+
+
+
 *****Before u start to run the project please cete a .env flle in th backend and fronend.
+
+
 
 
 Start backend:
 
 npm start
-Backend runs on: http://localhost:5000
+
+
+
+
 
 3. ML Service Setup
 cd ml-service
 pip install -r requirements.txt
 Start ML service:
-
-python -m uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+python -m uvicorn app:app --host 0.0.0.0 --port 8000 --reload(give ur choice port number)
 ML Service runs on: http://localhost:8000
+
+
+
+
 
 4. Frontend Setup
 cd frontend
 npm install
-
-
-REACT_APP_API_URL=http://localhost:5000/api
 Start frontend:
-
 npm start
-Frontend runs on: http://localhost:3000
+
+
+
+
+
 
 
  -------------*API Endpoints*----------------------------
+
+
+ 
 Authentication
 POST /api/auth/register - Register new user
 POST /api/auth/login - Login user
@@ -78,11 +96,17 @@ GET /api/resume/:id - Get specific resume analysis
 DELETE /api/resume/:id - Delete resume
 
 ----------* Authentication*--------------------
+
+
+
 User registration and login with JWT tokens
 Secure password hashing
 Token-based authentication for protected routes
 Automatic token refresh (optional)
 ------------* Security Features*---------------
+
+
+
 JWT authentication
 CORS enabled
 File upload validation
@@ -90,6 +114,9 @@ Password hashing
 Input validation and sanitization
 Error handling middleware
 -------------* Responsive Design*---------------
+
+
+
 Mobile-friendly interface
 Works on desktop, tablet, and mobile devices
 Progressive enhancement
