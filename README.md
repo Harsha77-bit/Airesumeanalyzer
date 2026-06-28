@@ -1,18 +1,40 @@
  AI Resume Analyzer :-
+
+ 
 An intelligent resume analysis platform that uses AI/ML to evaluate resumes, extract skills, match job requirements, and provide actionable feedback for job seekers.
 
 -----------------*Features*-----------------------------------------------------
 
 
 Resume Analysis: Extract text and analyze resumes using advanced ML algorithms
+
+
+
 Skill Extraction: Automatically identify and categorize technical and soft skills
+
+
 Job Matching: Match resume skills with job requirements and provide match percentages
+
+
 ATS Optimization: Check resume compatibility with Applicant Tracking Systems (ATS)
+
+
 Resume Scoring: Get an overall score and grade for your resume (A-F)
+
+
 Contact Information: Extract email, phone, LinkedIn, GitHub, and portfolio links
+
+
+
 Experience Level Detection: Estimate years of experience and seniority level
+
+
 Suggestions: Get personalized improvement recommendations
+
+
 Secure Upload: Encrypted file uploads with authentication
+
+
 Dashboard: View analysis history and resume scores
 
 
@@ -22,19 +44,24 @@ Dashboard: View analysis history and resume scores
 The project consists of three main components:
 
 1. Frontend (React)
-Modern UI with React 19
+
+2. Modern UI with React 19
+
+
 Real-time analysis feedback
+
 Authentication with JWT tokens
+
 Responsive design with CSS
 Interactive dashboard and upload interface
-2. Backend (Node.js + Express)
+4. Backend (Node.js + Express)
 REST API with Express.js
 MongoDB database integration
 JWT-based authentication
 File upload with Multer
 Async resume analysis
 CORS-enabled for frontend communication
-3. ML Service (Python + FastAPI)
+5. ML Service (Python + FastAPI)
 FastAPI server for ML models
 PDF text extraction
 Skill extraction and categorization
