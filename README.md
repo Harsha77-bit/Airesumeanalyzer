@@ -38,7 +38,23 @@ Secure Upload: Encrypted file uploads with authentication
 Dashboard: View analysis history and resume scores
 
 
-*****Before u start to run the project please cete a .env flle in th backend and fronend.
+*****Before u start to run the project please create a .env flle in th backend and fronend.
+
+and add 
+PORT
+   
+ MONGO_URI
+ 
+JWT_SECRET
+
+ML_SERVICE_URL=http://localhost:8000(i kept this, ur choice what you  want u can keep that one)
+
+CLOUDINARY_NAME
+
+CLOUDINARY_API_KEY
+
+CLOUDINARY_SECRET_KEY
+
 
 
 
