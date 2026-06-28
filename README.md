@@ -47,7 +47,7 @@ PORT
  
 JWT_SECRET
 
-ML_SERVICE_URL=http://localhost:8000(i kept this, ur choice what you  want u can keep that one)
+ML_SERVICE_URL=http://localhost:8000    (i kept this, ur choice what you  want u can keep that one)
 
 CLOUDINARY_NAME
 
