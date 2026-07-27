@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "https://airesumeanalyzer-1-6u3q.onrender.com",
+  baseURL: process.env.REACT_APP_API_URL || "https://airesumeanalyzer-1-6u3q.onrender.com/api",
   timeout: 300000, // 5 minutes global timeout
 });
 
