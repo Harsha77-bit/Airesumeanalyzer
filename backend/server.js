@@ -32,7 +32,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
-  "https://airesumeanalyzer-2-gb5w.onrender.com",
+  "https://airesumeanalyzer-1-6u3q.onrender.com",
 ];
 
 app.use(
