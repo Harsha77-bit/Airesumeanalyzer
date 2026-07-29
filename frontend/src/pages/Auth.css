@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════════════
-   AUTH PAGE — shared by Login & Register
-═══════════════════════════════════════════ */
+
 
 .auth-page {
   min-height: calc(100vh - 62px);
@@ -10,7 +8,7 @@
   overflow: hidden;
 }
 
-/* ── Animated background ── */
+
 .auth-bg {
   position: fixed;
   inset: 0;
@@ -63,7 +61,6 @@
   mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
 }
 
-/* ── Two-column layout ── */
 .auth-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -72,7 +69,7 @@
   z-index: 1;
 }
 
-/* ── Left branding panel ── */
+
 .auth-left {
   display: flex;
   flex-direction: column;
@@ -157,7 +154,6 @@
   color: var(--text3);
 }
 
-/* ── Right form panel ── */
 .auth-right {
   display: flex;
   align-items: center;
@@ -173,7 +169,7 @@
   gap: 0;
 }
 
-/* Card header */
+
 .auth-card-header { margin-bottom: 32px; }
 
 .auth-card-eyebrow {
@@ -210,7 +206,7 @@
 }
 .auth-inline-link:hover { border-bottom-color: var(--accent2); }
 
-/* Form */
+
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -218,7 +214,7 @@
   margin-bottom: 24px;
 }
 
-/* Field */
+
 .field { display: flex; flex-direction: column; gap: 7px; }
 
 .field-label {
@@ -282,7 +278,7 @@
 }
 .field-eye:hover { color: var(--text2); }
 
-/* Submit button */
+
 .auth-submit {
   height: 50px;
   border-radius: 12px;
@@ -327,7 +323,7 @@
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* Divider */
+
 .auth-divider {
   display: flex;
   align-items: center;
@@ -344,7 +340,7 @@
   background: var(--border);
 }
 
-/* Social buttons */
+
 .auth-social-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -377,14 +373,12 @@
   cursor: not-allowed;
 }
 
-/* ═══════════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════════ */
+
 @media (max-width: 900px) {
   .auth-layout { grid-template-columns: 1fr; }
 
   .auth-left {
-    display: none;  /* hide left panel on mobile, show only form */
+    display: none;  
   }
 
   .auth-right {
@@ -401,7 +395,7 @@
   .auth-social-row { grid-template-columns: 1fr; }
 }
 
-/* Landscape phones */
+
 @media (max-height: 600px) and (orientation: landscape) {
   .auth-right { padding: 24px 20px; align-items: flex-start; }
   .auth-card-header { margin-bottom: 20px; }

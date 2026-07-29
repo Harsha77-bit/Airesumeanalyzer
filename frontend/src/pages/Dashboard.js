@@ -168,7 +168,7 @@ export default function Dashboard() {
         overflow: "hidden",
       }}
     >
-      {/* Background */}
+      
       <div
         style={{
           position: "fixed",
@@ -209,7 +209,7 @@ export default function Dashboard() {
         className="container position-relative py-5"
         style={{ zIndex: 1, maxWidth: 900 }}
       >
-        {/* ── Header ── */}
+       
         <div className="d-flex align-items-start justify-content-between flex-wrap gap-3 mb-5">
           <div>
             <div
@@ -284,7 +284,7 @@ export default function Dashboard() {
           </Link>
         </div>
 
-        {/* ── Stats grid ── */}
+       
         <div className="row g-3 mb-5">
           {stats.map((s, i) => (
             <div key={i} className="col-6 col-md-3">
@@ -341,9 +341,9 @@ export default function Dashboard() {
           ))}
         </div>
 
-        {/* ── Resume list ── */}
+      
         <div>
-          {/* Section header */}
+         
           <div className="d-flex align-items-center justify-content-between mb-3">
             <h2
               className="fw-bold mb-0"
@@ -363,7 +363,7 @@ export default function Dashboard() {
             )}
           </div>
 
-          {/* Loading */}
+          
           {loading && (
             <div
               className="d-flex align-items-center justify-content-center rounded-4"
@@ -392,7 +392,7 @@ export default function Dashboard() {
             </div>
           )}
 
-          {/* Empty state */}
+          
           {!loading && resumes.length === 0 && (
             <div
               className="d-flex flex-column align-items-center justify-content-center text-center rounded-4 p-5"
@@ -441,7 +441,6 @@ export default function Dashboard() {
             </div>
           )}
 
-          {/* Resume list */}
           {!loading && resumes.length > 0 && (
             <div className="d-flex flex-column gap-2">
               {resumes.map((r, idx) => (
@@ -464,7 +463,7 @@ export default function Dashboard() {
                     e.currentTarget.style.background = "#0e0e17";
                   }}
                 >
-                  {/* File icon */}
+                  
                   <div
                     className="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
                     style={{
@@ -489,7 +488,7 @@ export default function Dashboard() {
                     )}
                   </div>
 
-                  {/* File info */}
+                 
                   <div className="flex-grow-1" style={{ minWidth: 0 }}>
                     <div
                       style={{
@@ -527,7 +526,7 @@ export default function Dashboard() {
                     </div>
                   </div>
 
-                  {/* Score / status */}
+               
                   <div className="flex-shrink-0">
                     {r.status === "analyzed" ? (
                       <ScoreBadge score={r.analysisResult?.score || 0} />
@@ -536,7 +535,7 @@ export default function Dashboard() {
                     )}
                   </div>
 
-                  {/* Actions */}
+                 
                   <div className="d-flex align-items-center gap-2 flex-shrink-0">
                     {r.status === "analyzed" && (
                       <Link

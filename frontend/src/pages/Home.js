@@ -419,7 +419,7 @@ export default function Home() {
               </span>
             </div>
             <p className="mb-0" style={{ fontSize: "0.8rem", color: "#5a5a7a" }}>
-              Built by Omkar Gawali · 2025
+              Built by Harsha Vardhan Naidu Pediredla· 2025
             </p>
           </div>
         </div>
